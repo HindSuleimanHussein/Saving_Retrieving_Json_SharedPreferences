@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Profile"
+            android:id="@+id/textView" android:baselineAligned="false"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="@string/name"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:hint="email"
+            android:layout_marginTop="52dp"
+    />
+
+    <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/grpRadio" tools:ignore="MissingConstraints">
+
+        <RadioButton android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/male"
+                     android:text="Male"/>
+
+        <RadioButton android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/female"
+                     android:text="Female"/>
+
+    </RadioGroup>
+
+
+    <Switch
+            android:text="Final Year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"/>
+
+    <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:text="Save"/>
+
+
+</LinearLayout>
